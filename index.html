@@ -754,5 +754,24 @@ function type(){
 }
 setTimeout(type,1200);
 </script>
+
+<!-- EMAIL PICKER MODAL -->
+<div class="email-overlay" id="emailOverlay" onclick="hideEmailPicker(event)">
+  <div class="email-modal">
+    <button class="email-close" onclick="hideEmailPicker()">✕</button>
+    <h3>Send me an email</h3>
+    <p>Choose your preferred email app</p>
+    <div class="email-choices">
+      <a class="email-choice ec-gmail" href="https://mail.google.com/mail/?view=cm&to=sriyanshsheel1106@gmail.com&su=Hiring Inquiry - Sriyansh Sheel&body=Hi Sriyansh," target="_blank" onclick="hideEmailPicker()">
+        <svg class="ec-icon" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 23.2L4 9h40z"/><path fill="#FBBC05" d="M4 9v30l10-10z"/><path fill="#34A853" d="M44 9v30L34 29z"/><path fill="#4285F4" d="M14 29l10 9.2L34 29 24 23.2z"/></svg>
+        Open in Gmail
+      </a>
+      <a class="email-choice ec-outlook" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring Inquiry - Sriyansh Sheel&body=Hi Sriyansh," onclick="hideEmailPicker()">
+        <svg class="ec-icon" viewBox="0 0 48 48"><rect width="48" height="48" rx="6" fill="#0072C6"/><path fill="#fff" d="M10 14h28v20H10z" opacity=".2"/><path fill="#fff" d="M10 14l14 11 14-11v2L24 27 10 16z"/></svg>
+        Open in Outlook / Mail App
+      </a>
+    </div>
+  </div>
+</div>
 </body>
 </html>
