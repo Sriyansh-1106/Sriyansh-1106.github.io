@@ -324,6 +324,8 @@ footer a{color:var(--muted2);text-decoration:none;transition:color .2s}
 footer a:hover{color:var(--purple)}
 .fst{display:flex;align-items:center;gap:.48rem}
 .fdot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:tp 2s infinite}
+.vcounter{display:inline-flex;align-items:center;gap:.45rem;padding:.3rem .85rem;border-radius:999px;background:rgba(109,40,217,.07);border:1.5px solid rgba(109,40,217,.18);font-size:.68rem;font-weight:600;color:var(--purple)}
+.vcounter-num{font-family:'Unbounded',sans-serif;font-size:.75rem;font-weight:800;color:var(--pink)}
 
 /* ═══ REVEAL ANIMATIONS ══════════════════════ */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
@@ -752,9 +754,8 @@ footer a:hover{color:var(--purple)}
         <a class="btn btn-out" href="https://l1nk.dev/hMl1z" target="_blank" rel="noopener">Portfolio →</a>
       </div>
       <div class="cinfo-row">
-        <div class="ci">📞 Available on request</div>
         <div class="ci">📍 Nagpur, Maharashtra, India</div>
-        <div class="ci">📬 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6d5d4cfdfc7c8d5ced5cec3c3ca97979690e6c1cbc7cfca88c5c9cb">[email&#160;protected]</a></div>
+        <div class="ci">📬 sriyanshsheel1106&#64;gmail.com</div>
       </div>
     </div>
   </div>
@@ -763,6 +764,7 @@ footer a:hover{color:var(--purple)}
 <!-- FOOTER -->
 <footer>
   <div>© 2025 Sriyansh Sheel · All rights reserved</div>
+  <div class="vcounter">👁️ <span class="vcounter-num" id="vc">...</span>&nbsp;visits</div>
   <div class="fst"><div class="fdot"></div>Open to opportunities</div>
   <div><a href="https://github.com/Sriyansh-1106" target="_blank" rel="noopener">github.com/Sriyansh-1106</a></div>
 </footer>
@@ -815,6 +817,18 @@ window.addEventListener('scroll',()=>{
   const y=scrollY*.02;
   document.querySelectorAll('.blob').forEach((b,i)=>b.style.transform=`translateY(${y*(i%2===0?1:-1)*(i+1)*.35}px)`);
 },{passive:true});
+
+/* ── VISITOR COUNTER ────────────── */
+fetch('https://api.counterapi.dev/v1/sriyansh-portfolio/visits/up')
+  .then(r=>r.json())
+  .then(d=>{
+    const el=document.getElementById('vc');
+    if(el && d.count) el.textContent=d.count.toLocaleString('en-IN');
+  })
+  .catch(()=>{
+    const el=document.getElementById('vc');
+    if(el) el.textContent='—';
+  });
 
 /* ── TYPEWRITER ─────────────────── */
 const roles=['Aspiring AI/ML Engineer','Power BI Enthusiast','React Native Developer','Competitive Programmer','CS + Business = Me'];
