@@ -299,6 +299,24 @@ footer a:hover{color:var(--purple)}
   .btn{justify-content:center}
   .info-grid{grid-template-columns:1fr}.ic-wide{grid-column:span 1}
 }
+
+/* EMAIL PICKER MODAL */
+.email-overlay{display:none;position:fixed;inset:0;background:rgba(15,7,32,.6);z-index:9000;backdrop-filter:blur(4px);align-items:center;justify-content:center}
+.email-overlay.show{display:flex}
+.email-modal{background:#fff;border:1.5px solid var(--border2);border-radius:20px;padding:2rem 2.5rem;box-shadow:var(--sh3);text-align:center;width:340px;position:relative;animation:popIn .25s ease}
+@keyframes popIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:scale(1)}}
+.email-modal h3{font-family:'Unbounded',sans-serif;font-size:1rem;font-weight:800;color:var(--text);margin-bottom:.4rem}
+.email-modal p{font-size:.8rem;color:var(--muted);margin-bottom:1.5rem}
+.email-choices{display:flex;flex-direction:column;gap:.75rem}
+.email-choice{display:flex;align-items:center;gap:.85rem;padding:.9rem 1.2rem;border-radius:12px;border:1.5px solid var(--border);text-decoration:none;color:var(--text);font-weight:600;font-size:.85rem;transition:all .2s;cursor:pointer}
+.email-choice:hover{transform:translateY(-2px);box-shadow:var(--sh2)}
+.ec-gmail{border-color:rgba(234,67,53,.3);background:rgba(234,67,53,.04)}
+.ec-gmail:hover{border-color:#ea4335;background:rgba(234,67,53,.08)}
+.ec-outlook{border-color:rgba(0,114,198,.3);background:rgba(0,114,198,.04)}
+.ec-outlook:hover{border-color:#0072c6;background:rgba(0,114,198,.08)}
+.ec-icon{width:28px;height:28px;flex-shrink:0}
+.email-close{position:absolute;top:.85rem;right:1rem;font-size:1.2rem;color:var(--muted2);cursor:pointer;background:none;border:none;font-family:inherit;transition:color .2s}
+.email-close:hover{color:var(--text)}
 </style>
 </head>
 <body>
@@ -315,7 +333,7 @@ footer a:hover{color:var(--purple)}
   <a href="#experience" onclick="closeMob()">Experience</a>
   <a href="#powerbi" onclick="closeMob()">Analytics</a>
   <a href="#contact" onclick="closeMob()">Contact</a>
-  <a class="mob-cta" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring Inquiry - Sriyansh Sheel" onclick="closeMob()">Hire me</a>
+  <a class="mob-cta" onclick="showEmailPicker();closeMob();" style="cursor:pointer">Hire me</a>
 </div>
 
 <!-- NAV -->
@@ -330,7 +348,7 @@ footer a:hover{color:var(--purple)}
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div style="display:flex;align-items:center;gap:.75rem">
-    <a class="nav-cta" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring Inquiry - Sriyansh Sheel">Hire me</a>
+    <a class="nav-cta" onclick="showEmailPicker()" style="cursor:pointer">Hire me</a>
     <div class="ham" id="ham" onclick="toggleMob()"><span></span><span></span><span></span></div>
   </div>
 </nav>
@@ -409,7 +427,7 @@ footer a:hover{color:var(--purple)}
         <div class="info-card ic-g"><div class="ic-icon">⚡</div><div class="ic-lbl">ICPC Global Rank</div><div class="ic-val">#2882 Worldwide</div></div>
         <div class="info-card ic-b"><div class="ic-icon">🏫</div><div class="ic-lbl">SSC — 10th</div><div class="ic-val">85% · Carmel Academy</div></div>
         <div class="info-card ic-pk"><div class="ic-icon">🏫</div><div class="ic-lbl">HSC — 12th</div><div class="ic-val">88.89% · Vivekanand Jr.</div></div>
-        <div class="info-card ic-pu ic-wide"><div class="ic-icon">📬</div><div class="ic-lbl">Email</div><div class="ic-val"><a href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring Inquiry - Sriyansh Sheel">sriyanshsheel1106@gmail.com</a></div></div>
+        <div class="info-card ic-pu ic-wide"><div class="ic-icon">📬</div><div class="ic-lbl">Email</div><div class="ic-val"><a href="mailto:sriyanshsheel1106@gmail.com" style="color:var(--purple);font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:600">sriyanshsheel1106@gmail.com</a></div></div>
       </div>
     </div>
   </div>
@@ -486,6 +504,13 @@ footer a:hover{color:var(--purple)}
         <div class="tl">
           <div class="tl-dot td2"></div>
           <div class="tl-date">2024 — Present</div>
+          <div class="tl-role">Mentee — Industry Mentorship Program</div>
+          <div class="tl-org">Persistent Systems</div>
+          <div class="tl-desc">Currently being mentored by an employee at Persistent Systems on a real-world project. Learning how industry-level projects are planned, built, and shipped — bridges the gap between college projects and actual product development.</div>
+        </div>
+        <div class="tl">
+          <div class="tl-dot" style="border-color:#7c3aed"></div>
+          <div class="tl-date">2024 — Present</div>
           <div class="tl-role">Peer Mentor — Ongoing</div>
           <div class="tl-org">S.B. Jain Institute of Technology, Nagpur</div>
           <div class="tl-desc">Mentoring junior students in AI/ML, competitive programming, and project building. Helping them get started with real projects, not just theory.</div>
@@ -539,6 +564,10 @@ footer a:hover{color:var(--purple)}
         <div class="cert-card cc-in">
           <div class="cc-icon">🔵</div>
           <div><div class="cc-iss" style="color:#0071c5">Intel × CBSE × Digital India</div><div class="cc-name">AI For All — AI Appreciate</div><div class="cc-sub">Certificate of Participation · 03 Mar 2025</div></div>
+        </div>
+        <div class="cert-card cc-b">
+          <div class="cc-icon">🏢</div>
+          <div><div class="cc-iss" style="color:var(--blue)">Persistent Systems · Ongoing</div><div class="cc-name">Industry Mentorship — Project Development</div><div class="cc-sub">Real-world project creation · Ongoing</div></div>
         </div>
         <div class="cert-card cc-pu">
           <div class="cc-icon">🎓</div>
@@ -641,16 +670,13 @@ footer a:hover{color:var(--purple)}
       <h2 style="margin-bottom:1rem">Want to work<br/><span class="gpk">together?</span></h2>
       <p>I'm a fresher actively looking for internships and entry-level roles in AI/ML. I'm a quick learner, I ship real projects, and I don't need hand-holding. If something I've built interests you, let's talk — I reply to everything.</p>
       <div class="cbtns">
-        <a class="btn btn-grad" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring Inquiry - Sriyansh Sheel&body=Hi Sriyansh,%0A%0AI came across your portfolio and would like to connect.">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-          Email Me
-        </a>
+        <a class="btn btn-grad" onclick="showEmailPicker()" style="cursor:pointer"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>Email Me</a>
         <a class="btn btn-out" href="https://github.com/Sriyansh-1106" target="_blank" rel="noopener">GitHub</a>
         <a class="btn btn-out" href="https://www.linkedin.com/in/sriyansh-sheel-51709528b/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
       <div class="cinfo-row">
         <div class="ci">📍 Nagpur, Maharashtra, India</div>
-        <div class="ci">📬 <a href="mailto:sriyanshsheel1106@gmail.com">sriyanshsheel1106@gmail.com</a></div>
+        <div class="ci">📬 <a href="mailto:sriyanshsheel1106@gmail.com" style="color:var(--purple);font-weight:700;text-decoration:none">sriyanshsheel1106@gmail.com</a></div>
       </div>
     </div>
   </div>
@@ -708,6 +734,13 @@ window.addEventListener('scroll',()=>{
   const y=scrollY*.02;
   document.querySelectorAll('.blob').forEach((b,i)=>b.style.transform=`translateY(${y*(i%2===0?1:-1)*(i+1)*.35}px)`);
 },{passive:true});
+
+/* EMAIL PICKER */
+function showEmailPicker(){document.getElementById('emailOverlay').classList.add('show')}
+function hideEmailPicker(e){
+  if(!e||e.target===document.getElementById('emailOverlay'))
+    document.getElementById('emailOverlay').classList.remove('show');
+}
 
 /* TYPEWRITER */
 const roles=['Aspiring AI/ML Engineer','Power BI Enthusiast','React Native Developer','Competitive Programmer','CS + Business = Me'];
