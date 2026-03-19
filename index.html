@@ -123,8 +123,6 @@ h1{font-family:'Unbounded',sans-serif;font-size:clamp(2.6rem,5.8vw,5.2rem);font-
 .btn-grad:hover{box-shadow:0 6px 32px rgba(232,24,90,.48);transform:translateY(-2px)}
 .btn-out{border:1.5px solid var(--border2);color:var(--purple);background:rgba(109,40,217,.04)}
 .btn-out:hover{background:rgba(109,40,217,.1);border-color:var(--purple)}
-.btn-dark{background:var(--text);color:#fff}
-.btn-dark:hover{background:#2d1a5c;transform:translateY(-2px)}
 
 /* Hero right */
 .hero-right{display:flex;flex-direction:column;gap:1rem;opacity:0;animation:fright .8s .9s ease forwards}
@@ -380,7 +378,7 @@ footer a:hover{color:var(--purple)}
   <a href="#experience" onclick="closeMob()">Experience</a>
   <a href="#powerbi" onclick="closeMob()">Analytics</a>
   <a href="#contact" onclick="closeMob()">Contact</a>
-  <a class="mob-cta" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring%20Inquiry%20-%20Sriyansh%20Sheel">Hire me →</a>
+  <a class="mob-cta" href="/cdn-cgi/l/email-protection#5023223929313e2338233835353c6161606610373d31393c7e333f3d6f2325323a3533246d183922393e37756260193e21253922297562607d75626003223929313e2338756260033835353c">Hire me →</a>
 </div>
 
 <!-- NAV -->
@@ -395,7 +393,7 @@ footer a:hover{color:var(--purple)}
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div class="nav-right">
-    <a class="nav-cta" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring%20Inquiry%20-%20Sriyansh%20Sheel">Hire me →</a>
+    <a class="nav-cta" href="/cdn-cgi/l/email-protection#ccbfbea5b5ada2bfa4bfa4a9a9a0fdfdfcfa8caba1ada5a0e2afa3a1f3bfb9aea6a9afb8f184a5bea5a2abe9fefc85a2bdb9a5beb5e9fefce1e9fefc9fbea5b5ada2bfa4e9fefc9fa4a9a9a0">Hire me →</a>
     <div class="ham" id="ham" onclick="toggleMob()"><span></span><span></span><span></span></div>
   </div>
 </nav>
@@ -489,7 +487,7 @@ footer a:hover{color:var(--purple)}
         <div class="info-card ic-b"><div class="ic-icon">🏫</div><div class="ic-lbl">SSC — 10th (Carmel Academy)</div><div class="ic-val">85% · 2020</div></div>
         <div class="info-card ic-pk"><div class="ic-icon">🏫</div><div class="ic-lbl">HSC — 12th (Vivekanand Jr.)</div><div class="ic-val">88.89% · 2022</div></div>
         <div class="info-card ic-pk ic-wide"><div class="ic-icon">📞</div><div class="ic-lbl">Phone</div><div class="ic-val"><a href="#contact" style="color:var(--purple);font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:600">Available on request →</a></div></div>
-        <div class="info-card ic-pu ic-wide"><div class="ic-icon">📬</div><div class="ic-lbl">Email</div><div class="ic-val"><a href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring%20Inquiry%20-%20Sriyansh%20Sheel" style="color:var(--purple);font-weight:600">sriyanshsheel1106@gmail.com</a></div></div>
+        <div class="info-card ic-pu ic-wide"><div class="ic-icon">📬</div><div class="ic-lbl">Email</div><div class="ic-val"><a href="/cdn-cgi/l/email-protection#0c7f7e65756d627f647f646969603d3d3c3a4c6b616d6560226f6361337f796e66696f783144657e65626b293e3c45627d79657e75293e3c21293e3c5f7e65756d627f64293e3c5f64696960" style="color:var(--purple);font-weight:600"><span class="__cf_email__" data-cfemail="1261607b6b737c617a617a77777e2323222452757f737b7e3c717d7f">[email&#160;protected]</span></a></div></div>
       </div>
     </div>
   </div>
@@ -769,7 +767,7 @@ footer a:hover{color:var(--purple)}
       </div>
       <div class="cinfo-row">
         <div class="ci">📍 Nagpur, Maharashtra, India</div>
-        <div class="ci">📬 <a href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring%20Inquiry%20-%20Sriyansh%20Sheel" style="color:var(--purple);font-weight:700;text-decoration:none">sriyanshsheel1106@gmail.com</a></div>
+        <div class="ci">📬 <a href="/cdn-cgi/l/email-protection#7b080912021a15081308131e1e174a4a4b4d3b1c161a12175518141644080e19111e180f4633120912151c5e494b32150a0e1209025e494b565e494b280912021a1508135e494b28131e1e17" style="color:var(--purple);font-weight:700;text-decoration:none"><span class="__cf_email__" data-cfemail="daa9a8b3a3bbb4a9b2a9b2bfbfb6ebebeaec9abdb7bbb3b6f4b9b5b7">[email&#160;protected]</span></a></div>
       </div>
     </div>
   </div>
@@ -820,22 +818,7 @@ function closeMob(){
   document.body.style.overflow='';
 }
 
-/* ── SCROLL REVEAL ──────────────── */
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');obs.unobserve(e.target)}});
-},{threshold:.09});
-document.querySelectorAll('.rv,.rv-l,.rv-r').forEach(el=>obs.observe(el));
-
-/* ── BLOB PARALLAX ──────────────── */
-window.addEventListener('scroll',()=>{
-  const y=scrollY*.02;
-  document.querySelectorAll('.blob').forEach((b,i)=>b.style.transform=`translateY(${y*(i%2===0?1:-1)*(i+1)*.35}px)`);
-},{passive:true});
-
-/* ── VISITOR COUNTER ────────────── */
-// Visitor counter - uses localStorage to persist count per browser
-const vcEl = document.getElementById('vc');
-try {
-  let count = parseInt(localStorage.getItem('ss_visits') || '0');
-  const lastVisit = localStorage.getItem('ss_last_visit');
-  const today = new Date().toDateString();
+/* ── SCROLL REVEAL ────────
+</script>
+</body>
+</html>
