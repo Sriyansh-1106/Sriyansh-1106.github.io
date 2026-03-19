@@ -480,7 +480,7 @@ footer a:hover{color:var(--purple)}
         <div class="info-card ic-b"><div class="ic-icon">🏫</div><div class="ic-lbl">SSC — 10th (Carmel Academy)</div><div class="ic-val">85% · 2020</div></div>
         <div class="info-card ic-pk"><div class="ic-icon">🏫</div><div class="ic-lbl">HSC — 12th (Vivekanand Jr.)</div><div class="ic-val">88.89% · 2022</div></div>
         <div class="info-card ic-pk ic-wide"><div class="ic-icon">📞</div><div class="ic-lbl">Phone</div><div class="ic-val"><a href="tel:9322148375" style="color:var(--purple);font-family:'Plus Jakarta Sans',sans-serif;font-size:.82rem;font-weight:600">+91 93221 48375</a></div></div>
-        <div class="info-card ic-pu ic-wide"><div class="ic-icon">📬</div><div class="ic-lbl">Email</div><div class="ic-val"><a href="https://mail.google.com/mail/?view=cm&to=sriyanshsheel1106@gmail.com" target="_blank" rel="noopener">sriyanshsheel1106@gmail.com</a></div></div>
+        <div class="info-card ic-pu ic-wide"><div class="ic-icon">📬</div><div class="ic-lbl">Email</div><div class="ic-val"><a href="https://mail.google.com/mail/?view=cm&to=sriyanshsheel1106@gmail.com" target="_blank" rel="noopener"><span class="__cf_email__" data-cfemail="ef9c9d86968e819c879c878a8a83dededfd9af88828e8683c18c8082">[email&#160;protected]</span></a></div></div>
       </div>
     </div>
   </div>
@@ -752,7 +752,7 @@ footer a:hover{color:var(--purple)}
       <div class="cinfo-row">
         <div class="ci">📞 <a href="tel:9322148375">+91 93221 48375</a></div>
         <div class="ci">📍 Nagpur, Maharashtra, India</div>
-        <div class="ci">📬 sriyanshsheel1106@gmail.com</div>
+        <div class="ci">📬 <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="a6d5d4cfdfc7c8d5ced5cec3c3ca97979690e6c1cbc7cfca88c5c9cb">[email&#160;protected]</a></div>
       </div>
     </div>
   </div>
@@ -765,7 +765,7 @@ footer a:hover{color:var(--purple)}
   <div><a href="https://github.com/Sriyansh-1106" target="_blank" rel="noopener">github.com/Sriyansh-1106</a></div>
 </footer>
 
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 /* ── CURSOR ─────────────────────── */
 const cur=document.getElementById('cur'),ring=document.getElementById('cur-r');
 let mx=0,my=0,rx=0,ry=0;
@@ -817,4 +817,14 @@ window.addEventListener('scroll',()=>{
 /* ── TYPEWRITER ─────────────────── */
 const roles=['Aspiring AI/ML Engineer','Power BI Enthusiast','React Native Developer','Competitive Programmer','CS + Business = Me'];
 let ri=0,ci=0,del=false;
-const tw=document.g
+const tw=document.getElementById('typed');
+function type(){
+  const word=roles[ri];
+  if(!del){tw.textContent=word.slice(0,++ci);if(ci===word.length){del=true;setTimeout(type,1600);return}}
+  else{tw.textContent=word.slice(0,--ci);if(ci===0){del=false;ri=(ri+1)%roles.length}}
+  setTimeout(type,del?55:90);
+}
+setTimeout(type,1200);
+</script>
+</body>
+</html>
