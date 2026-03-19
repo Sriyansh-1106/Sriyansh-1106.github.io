@@ -5,28 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <meta name="description" content="Sriyansh Sheel — Fresher AI/ML Engineer, B.Tech CSE (AIML), Power BI, Nagpur"/>
 <title>Sriyansh Sheel — AI/ML Engineer</title>
-
-<!-- Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-RJ1TEY8FS5"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
+  window.dataLayer=window.dataLayer||[];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-RJ1TEY8FS5');
+  gtag('js',new Date());
+  gtag('config','G-RJ1TEY8FS5');
 </script>
-
 <link rel="preconnect" href="https://fonts.googleapis.com"/>
-<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;600;700;800;900&family=Plus+Jakarta+Sans:opsz,wght@6..30,300;6..30,400;6..30,500;6..30,600;6..30,700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 :root{
-  --bg:#f4f2ff;--bg2:#fff;--surface:#fff;
+  --bg:#f4f2ff;--bg2:#fff;
   --pink:#e8185a;--orange:#ea580c;--purple:#6d28d9;--blue:#1d4ed8;
   --green:#047857;--teal:#0891b2;--amber:#b45309;
   --text:#0f0720;--muted:#5b4f87;--muted2:#9380bf;
-  --border:rgba(109,40,217,0.11);--border2:rgba(109,40,217,0.22);
-  --sh1:0 2px 16px rgba(109,40,217,0.09);--sh2:0 8px 40px rgba(109,40,217,0.14);--sh3:0 20px 60px rgba(109,40,217,0.18);
+  --border:rgba(109,40,217,.11);--border2:rgba(109,40,217,.22);
+  --sh1:0 2px 16px rgba(109,40,217,.09);--sh2:0 8px 40px rgba(109,40,217,.14);--sh3:0 20px 60px rgba(109,40,217,.18);
 }
 body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',sans-serif;overflow-x:hidden;cursor:none}
 
@@ -36,10 +33,10 @@ body{background:var(--bg);color:var(--text);font-family:'Plus Jakarta Sans',sans
 body.hov #cur{width:20px;height:20px;background:var(--purple)}
 body.hov #cur-r{width:48px;height:48px;border-color:rgba(109,40,217,.28)}
 
-/* BG BLOBS */
+/* BLOBS */
 .blobs{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}
 .blob{position:absolute;border-radius:50%;filter:blur(72px);animation:bd 16s ease-in-out infinite}
-.b1{width:650px;height:650px;background:rgba(232,24,90,.1);top:-180px;right:-120px;animation-delay:0s}
+.b1{width:650px;height:650px;background:rgba(232,24,90,.1);top:-180px;right:-120px}
 .b2{width:550px;height:550px;background:rgba(109,40,217,.09);bottom:-130px;left:-100px;animation-delay:-6s}
 .b3{width:420px;height:420px;background:rgba(29,78,216,.07);top:38%;left:43%;animation-delay:-10s}
 .b4{width:320px;height:320px;background:rgba(4,120,87,.05);top:15%;left:22%;animation-delay:-4s}
@@ -50,7 +47,7 @@ nav{position:fixed;top:0;left:0;right:0;z-index:300;padding:1rem 3.5rem;display:
 nav.sc{padding:.75rem 3.5rem}
 .nav-logo{font-family:'Unbounded',sans-serif;font-weight:800;font-size:.95rem;text-decoration:none;background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .nav-links{display:flex;gap:1.8rem;list-style:none}
-.nav-links a{color:var(--muted);text-decoration:none;font-size:.78rem;font-weight:600;letter-spacing:.03em;transition:color .2s;position:relative;padding-bottom:3px}
+.nav-links a{color:var(--muted);text-decoration:none;font-size:.78rem;font-weight:600;transition:color .2s;position:relative;padding-bottom:3px}
 .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:linear-gradient(90deg,var(--pink),var(--purple));border-radius:2px;transition:width .25s}
 .nav-links a:hover,.nav-links a.active{color:var(--purple)}
 .nav-links a:hover::after,.nav-links a.active::after{width:100%}
@@ -65,24 +62,24 @@ nav.sc{padding:.75rem 3.5rem}
 .mob-menu.open{display:flex}
 .mob-menu a{font-family:'Unbounded',sans-serif;font-size:1.4rem;font-weight:700;color:var(--text);text-decoration:none;transition:color .2s}
 .mob-menu a:hover{color:var(--purple)}
-.mob-cta{font-size:1rem !important;padding:.8rem 2.5rem;background:linear-gradient(135deg,var(--pink),var(--purple));border-radius:999px;color:#fff !important;margin-top:1rem}
+.mob-cta{font-size:1rem !important;padding:.8rem 2.5rem !important;background:linear-gradient(135deg,var(--pink),var(--purple));border-radius:999px;color:#fff !important;margin-top:1rem}
 
 /* HERO */
 #hero{min-height:100vh;display:flex;align-items:center;padding:8rem 3.5rem 5rem;position:relative;z-index:2}
 .hero-wrap{max-width:1180px;margin:0 auto;width:100%;display:grid;grid-template-columns:1fr 320px;gap:4rem;align-items:center}
 .hero-tag{display:inline-flex;align-items:center;gap:.55rem;padding:.38rem .9rem;border-radius:999px;background:rgba(232,24,90,.07);border:1.5px solid rgba(232,24,90,.22);margin-bottom:2rem;opacity:0;animation:fup .6s .1s ease forwards}
-.htd{width:6px;height:6px;border-radius:50%;background:var(--pink);animation:tp 1.6s infinite}
+.htd{width:6px;height:6px;border-radius:50%;background:var(--pink);animation:pulse 1.6s infinite}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.25;transform:scale(.55)}}
 .hero-tag span{font-size:.67rem;font-weight:700;letter-spacing:.15em;text-transform:uppercase;color:var(--pink)}
-@keyframes tp{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.25;transform:scale(.55)}}
 h1{font-family:'Unbounded',sans-serif;font-size:clamp(2.6rem,5.8vw,5.2rem);font-weight:800;line-height:.93;letter-spacing:-.032em;margin-bottom:1.8rem;opacity:0;animation:fup .7s .3s ease forwards}
 .h1g{display:block;background:linear-gradient(135deg,var(--text) 20%,var(--pink) 65%,var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 .h1r{display:block;font-size:.42em;font-weight:400;letter-spacing:.01em;margin-top:.5em;color:var(--muted2);-webkit-text-fill-color:var(--muted2)}
 .tw{display:inline-block;border-right:2px solid var(--pink);animation:blink .75s step-end infinite;min-width:2px}
 @keyframes blink{0%,100%{border-color:var(--pink)}50%{border-color:transparent}}
-.hero-desc{font-size:.97rem;color:var(--muted);line-height:1.88;max-width:520px;margin-bottom:2.5rem;font-weight:400;opacity:0;animation:fup .7s .5s ease forwards}
+.hero-desc{font-size:.97rem;color:var(--muted);line-height:1.88;max-width:520px;margin-bottom:2.5rem;opacity:0;animation:fup .7s .5s ease forwards}
 .hero-desc strong{color:var(--text);font-weight:600}
 .hero-chips{display:flex;flex-wrap:wrap;gap:.42rem;margin-bottom:2.8rem;opacity:0;animation:fup .7s .65s ease forwards}
-.chip{font-size:.69rem;font-weight:600;padding:.3rem .75rem;border-radius:999px;border:1.5px solid;transition:all .18s;letter-spacing:.02em}
+.chip{font-size:.69rem;font-weight:600;padding:.3rem .75rem;border-radius:999px;border:1.5px solid;transition:all .18s}
 .cp{border-color:rgba(109,40,217,.28);color:var(--purple);background:rgba(109,40,217,.05)}.cp:hover{background:rgba(109,40,217,.12)}
 .cpk{border-color:rgba(232,24,90,.28);color:var(--pink);background:rgba(232,24,90,.05)}.cpk:hover{background:rgba(232,24,90,.12)}
 .cb{border-color:rgba(29,78,216,.28);color:var(--blue);background:rgba(29,78,216,.05)}.cb:hover{background:rgba(29,78,216,.12)}
@@ -98,8 +95,8 @@ h1{font-family:'Unbounded',sans-serif;font-size:clamp(2.6rem,5.8vw,5.2rem);font-
 .hero-right{display:flex;flex-direction:column;gap:1rem;opacity:0;animation:fr .8s .9s ease forwards}
 @keyframes fr{from{opacity:0;transform:translateX(22px)}to{opacity:1;transform:translateX(0)}}
 @keyframes fup{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
-.stat-card{background:var(--surface);border:1.5px solid var(--border);border-radius:16px;padding:1.5rem 1.8rem;box-shadow:var(--sh1);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
-.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;border-radius:3px 3px 0 0}
+.stat-card{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:1.5rem 1.8rem;box-shadow:var(--sh1);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
+.stat-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
 .scp::before{background:linear-gradient(90deg,var(--pink),var(--orange))}
 .scpu::before{background:linear-gradient(90deg,var(--purple),var(--blue))}
 .scg::before{background:linear-gradient(90deg,var(--green),var(--teal))}
@@ -129,7 +126,7 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(1.75rem,3.4vw,2.8rem);font
 .go{background:linear-gradient(135deg,var(--text) 30%,var(--orange));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
 
 /* ABOUT */
-#about{background:var(--bg2)}
+#about{background:#fff}
 .about-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:5rem;align-items:start}
 .about-text p{color:var(--muted);line-height:1.95;font-size:.92rem;margin-bottom:1.1rem}
 .about-text strong{color:var(--text);font-weight:600}
@@ -154,7 +151,7 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(1.75rem,3.4vw,2.8rem);font
 /* SKILLS */
 #skills{background:var(--bg)}
 .skills-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(268px,1fr));gap:1.1rem}
-.sk-card{background:var(--surface);border:1.5px solid var(--border);border-radius:16px;padding:1.65rem;box-shadow:var(--sh1);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
+.sk-card{background:#fff;border:1.5px solid var(--border);border-radius:16px;padding:1.65rem;box-shadow:var(--sh1);transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
 .sk-card:hover{transform:translateY(-4px);box-shadow:var(--sh2)}
 .sk-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
 .skpk::before{background:linear-gradient(90deg,var(--pink),var(--orange))}
@@ -170,9 +167,9 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(1.75rem,3.4vw,2.8rem);font
 .skt:hover{border-color:var(--purple);color:var(--purple);background:rgba(109,40,217,.05)}
 
 /* PROJECTS */
-#projects{background:var(--bg2)}
+#projects{background:#fff}
 .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem}
-.proj-card{background:var(--surface);border:1.5px solid var(--border);border-radius:18px;padding:1.9rem;box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s;text-decoration:none;color:inherit;display:flex;flex-direction:column;position:relative;overflow:hidden}
+.proj-card{background:#fff;border:1.5px solid var(--border);border-radius:18px;padding:1.9rem;box-shadow:var(--sh1);transition:transform .3s,box-shadow .3s;text-decoration:none;color:inherit;display:flex;flex-direction:column;position:relative;overflow:hidden}
 .proj-card::before{content:'';position:absolute;top:0;left:0;right:0;height:3px}
 .pcpk::before{background:linear-gradient(90deg,var(--pink),var(--orange))}
 .pcpu::before{background:linear-gradient(90deg,var(--purple),var(--blue))}
@@ -201,16 +198,14 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(1.75rem,3.4vw,2.8rem);font
 .timeline{padding-left:2rem;border-left:2px solid rgba(109,40,217,.12)}
 .tl{margin-bottom:2.6rem;position:relative}
 .tl-dot{position:absolute;left:-2.56rem;top:6px;width:11px;height:11px;border-radius:50%;border:2.5px solid;background:var(--bg)}
-.td1{border-color:var(--pink)}.td2{border-color:var(--purple)}.td3{border-color:var(--orange)}.td4{border-color:var(--blue)}.td5{border-color:var(--green)}.td6{border-color:var(--teal)}
+.td1{border-color:var(--pink)}.td2{border-color:var(--purple)}.td3{border-color:var(--orange)}.td4{border-color:var(--blue)}.td5{border-color:var(--green)}.td6{border-color:var(--teal)}.td7{border-color:#8b5cf6}
 .tl-date{font-size:.62rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--muted2);margin-bottom:.38rem}
 .tl-role{font-family:'Unbounded',sans-serif;font-size:.92rem;font-weight:700;color:var(--text);margin-bottom:.18rem;line-height:1.28}
 .tl-org{font-size:.78rem;color:var(--muted2);margin-bottom:.5rem;font-weight:500}
 .tl-desc{font-size:.8rem;color:var(--muted);line-height:1.85}
-
-/* CERTS */
 .certs-col{display:flex;flex-direction:column;gap:.85rem}
 .cert-hd{font-family:'Unbounded',sans-serif;font-size:.78rem;font-weight:700;color:var(--muted2);margin-bottom:.5rem}
-.cert-card{background:var(--surface);border:1.5px solid var(--border);border-radius:13px;padding:1.25rem 1.45rem;box-shadow:var(--sh1);transition:transform .22s,box-shadow .22s;position:relative;overflow:hidden;display:flex;gap:.9rem;align-items:flex-start}
+.cert-card{background:#fff;border:1.5px solid var(--border);border-radius:13px;padding:1.25rem 1.45rem;box-shadow:var(--sh1);transition:transform .22s,box-shadow .22s;position:relative;overflow:hidden;display:flex;gap:.9rem;align-items:flex-start}
 .cert-card:hover{transform:translateX(5px);box-shadow:var(--sh2)}
 .cert-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:3px}
 .cc-pk::before{background:linear-gradient(180deg,var(--pink),var(--orange))}
@@ -225,18 +220,18 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(1.75rem,3.4vw,2.8rem);font
 .cc-sub{font-size:.7rem;color:var(--muted2);margin-top:.25rem}
 
 /* POWER BI */
-#powerbi{background:var(--bg2)}
+#powerbi{background:#fff}
 .bi-wrap{display:grid;grid-template-columns:1fr 1.15fr;gap:4.5rem;align-items:center}
 .bi-text p{color:var(--muted);font-size:.91rem;line-height:1.9;margin-bottom:1.1rem}
 .bi-text strong{color:var(--text);font-weight:600}
 .bi-feats{display:grid;grid-template-columns:1fr 1fr;gap:.65rem;margin-top:1.7rem}
 .bfeat{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:.8rem 1rem;font-size:.76rem;color:var(--muted);display:flex;align-items:center;gap:.52rem;transition:all .2s;box-shadow:var(--sh1);font-weight:500}
 .bfeat:hover{border-color:var(--purple);color:var(--purple);background:rgba(109,40,217,.04);transform:translateY(-2px)}
-.bi-dash{background:var(--surface);border:1.5px solid var(--border);border-radius:18px;overflow:hidden;box-shadow:var(--sh3)}
+.bi-dash{background:#fff;border:1.5px solid var(--border);border-radius:18px;overflow:hidden;box-shadow:var(--sh3)}
 .bi-topbar{display:flex;align-items:center;justify-content:space-between;padding:.68rem 1.1rem;background:linear-gradient(135deg,rgba(232,24,90,.05),rgba(109,40,217,.05));border-bottom:1px solid var(--border)}
 .bi-dots{display:flex;gap:.32rem}
 .bi-dot{width:7px;height:7px;border-radius:50%}
-.bi-dash-title{font-size:.65rem;color:var(--muted2);font-weight:600;letter-spacing:.05em}
+.bi-dash-ttl{font-size:.65rem;color:var(--muted2);font-weight:600}
 .bi-body{padding:1.1rem;display:grid;grid-template-columns:repeat(4,1fr);gap:.65rem}
 .bi-kpi{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:.82rem;transition:transform .2s}
 .bi-kpi:hover{transform:translateY(-2px)}
@@ -248,7 +243,7 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(1.75rem,3.4vw,2.8rem);font
 .bi-pie-row{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;gap:.65rem}
 .bi-pie{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:.95rem;display:flex;align-items:center;gap:.85rem}
 .bi-pie-svg{width:46px;height:46px;flex-shrink:0}
-.bi-legend{display:flex;flex-direction:column;gap:.28rem}
+.bi-leg{display:flex;flex-direction:column;gap:.28rem}
 .bi-li{display:flex;align-items:center;gap:.38rem;font-size:.6rem;color:var(--muted);font-weight:500}
 .bi-ld{width:7px;height:7px;border-radius:50%;flex-shrink:0}
 .bi-prog{background:var(--bg);border:1.5px solid var(--border);border-radius:10px;padding:.95rem}
@@ -259,24 +254,22 @@ h2{font-family:'Unbounded',sans-serif;font-size:clamp(1.75rem,3.4vw,2.8rem);font
 
 /* CONTACT */
 #contact{background:var(--bg)}
-.contact-box{background:var(--surface);border:1.5px solid var(--border);border-radius:24px;padding:4rem 4.5rem;box-shadow:var(--sh3);text-align:center;max-width:680px;margin:0 auto;position:relative;overflow:hidden}
+.contact-box{background:#fff;border:1.5px solid var(--border);border-radius:24px;padding:4rem 4.5rem;box-shadow:var(--sh3);text-align:center;max-width:680px;margin:0 auto;position:relative;overflow:hidden}
 .contact-box::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--pink),var(--purple),var(--blue))}
 #contact h2{margin-bottom:1rem}
 #contact p{color:var(--muted);font-size:.91rem;line-height:1.9;margin-bottom:2.5rem}
 .cbtns{display:flex;justify-content:center;gap:.8rem;flex-wrap:wrap;margin-bottom:2.2rem}
 .cinfo-row{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap}
 .ci{font-size:.77rem;color:var(--muted2);display:flex;align-items:center;gap:.38rem;font-weight:500}
-.ci a{color:var(--purple);font-weight:700;text-decoration:none;transition:color .2s}
+.ci a{color:var(--purple);font-weight:700;text-decoration:none}
 .ci a:hover{color:var(--pink)}
 
 /* FOOTER */
-footer{position:relative;z-index:2;padding:1.7rem 3.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:.69rem;color:var(--muted2);background:var(--bg2)}
+footer{position:relative;z-index:2;padding:1.7rem 3.5rem;border-top:1px solid var(--border);display:flex;justify-content:space-between;align-items:center;font-size:.69rem;color:var(--muted2);background:#fff;flex-wrap:wrap;gap:.75rem}
 footer a{color:var(--muted2);text-decoration:none;transition:color .2s}
 footer a:hover{color:var(--purple)}
 .fst{display:flex;align-items:center;gap:.48rem}
-.fdot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:tp 2s infinite}
-.vcounter{display:inline-flex;align-items:center;gap:.45rem;padding:.3rem .85rem;border-radius:999px;background:rgba(109,40,217,.07);border:1.5px solid rgba(109,40,217,.18);font-size:.68rem;font-weight:600;color:var(--purple)}
-.vcounter-num{font-family:'Unbounded',sans-serif;font-size:.75rem;font-weight:800;color:var(--pink)}
+.fdot{width:6px;height:6px;border-radius:50%;background:var(--green);animation:pulse 2s infinite}
 
 /* REVEAL */
 .rv{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease}
@@ -322,7 +315,7 @@ footer a:hover{color:var(--purple)}
   <a href="#experience" onclick="closeMob()">Experience</a>
   <a href="#powerbi" onclick="closeMob()">Analytics</a>
   <a href="#contact" onclick="closeMob()">Contact</a>
-  <a class="mob-cta" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring%20Inquiry%20-%20Sriyansh%20Sheel" onclick="closeMob()">Hire me →</a>
+  <a class="mob-cta" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring Inquiry - Sriyansh Sheel" onclick="closeMob()">Hire me</a>
 </div>
 
 <!-- NAV -->
@@ -337,7 +330,7 @@ footer a:hover{color:var(--purple)}
     <li><a href="#contact">Contact</a></li>
   </ul>
   <div style="display:flex;align-items:center;gap:.75rem">
-    <a class="nav-cta" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring%20Inquiry%20-%20Sriyansh%20Sheel">Hire me →</a>
+    <a class="nav-cta" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring Inquiry - Sriyansh Sheel">Hire me</a>
     <div class="ham" id="ham" onclick="toggleMob()"><span></span><span></span><span></span></div>
   </div>
 </nav>
@@ -354,7 +347,7 @@ footer a:hover{color:var(--purple)}
       <p class="hero-desc">
         <strong>B.Tech CSE (AIML)</strong> student from Nagpur. I like solving problems that actually matter —
         built an AI that catches scam calls, an emergency app for schools, and I use Power BI
-        to make data actually useful. Also ranked <strong>#2882 globally in ACM-ICPC</strong>, which I'm pretty proud of.
+        to make data actually useful. Also ranked <strong>#2882 globally in ACM-ICPC</strong>.
       </p>
       <div class="hero-chips">
         <span class="chip cpk">Machine Learning</span>
@@ -366,7 +359,7 @@ footer a:hover{color:var(--purple)}
         <span class="chip cg">ACM-ICPC #2882</span>
       </div>
       <div class="hero-btns">
-        <a class="btn btn-grad" href="#projects">View Projects ↓</a>
+        <a class="btn btn-grad" href="#projects">View Projects</a>
         <a class="btn btn-out" href="https://github.com/Sriyansh-1106" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
           GitHub
@@ -416,7 +409,7 @@ footer a:hover{color:var(--purple)}
         <div class="info-card ic-g"><div class="ic-icon">⚡</div><div class="ic-lbl">ICPC Global Rank</div><div class="ic-val">#2882 Worldwide</div></div>
         <div class="info-card ic-b"><div class="ic-icon">🏫</div><div class="ic-lbl">SSC — 10th</div><div class="ic-val">85% · Carmel Academy</div></div>
         <div class="info-card ic-pk"><div class="ic-icon">🏫</div><div class="ic-lbl">HSC — 12th</div><div class="ic-val">88.89% · Vivekanand Jr.</div></div>
-        <div class="info-card ic-pu ic-wide"><div class="ic-icon">📬</div><div class="ic-lbl">Email</div><div class="ic-val"><a href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring%20Inquiry%20-%20Sriyansh%20Sheel">sriyanshsheel1106@gmail.com</a></div></div>
+        <div class="info-card ic-pu ic-wide"><div class="ic-icon">📬</div><div class="ic-lbl">Email</div><div class="ic-val"><a href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring Inquiry - Sriyansh Sheel">sriyanshsheel1106@gmail.com</a></div></div>
       </div>
     </div>
   </div>
@@ -495,14 +488,14 @@ footer a:hover{color:var(--purple)}
           <div class="tl-date">2024 — Present</div>
           <div class="tl-role">Peer Mentor — Ongoing</div>
           <div class="tl-org">S.B. Jain Institute of Technology, Nagpur</div>
-          <div class="tl-desc">Mentoring junior students in AI/ML, competitive programming, and project building. Helping them get started with real projects, not just theory — the same way I wish someone had helped me when I started.</div>
+          <div class="tl-desc">Mentoring junior students in AI/ML, competitive programming, and project building. Helping them get started with real projects, not just theory.</div>
         </div>
         <div class="tl">
           <div class="tl-dot td3"></div>
           <div class="tl-date">2019 — Present</div>
           <div class="tl-role">Mukhya Shikshak — Head Instructor</div>
           <div class="tl-org">Rashtriya Swayamsevak Sangh (RSS), Nagpur</div>
-          <div class="tl-desc">Been part of RSS since school. Became a Mukhya Shikshak which means I lead and train a group every week. Running shakhas, organising camps — it's genuinely made me a better communicator and calmer under pressure.</div>
+          <div class="tl-desc">Been part of RSS since school. Became a Mukhya Shikshak which means I lead and train a group every week. It's genuinely made me a better communicator and calmer under pressure.</div>
         </div>
         <div class="tl">
           <div class="tl-dot td4"></div>
@@ -526,40 +519,39 @@ footer a:hover{color:var(--purple)}
           <div class="tl-desc">Scored 88.89% in Science stream. Maths and Physics were always my strongest subjects.</div>
         </div>
         <div class="tl">
-          <div class="tl-dot" style="border-color:var(--teal)"></div>
+          <div class="tl-dot td7"></div>
           <div class="tl-date">2019 — 2020</div>
           <div class="tl-role">SSC — 10th Standard, 85%</div>
           <div class="tl-org">Carmel Academy, Nagpur</div>
-          <div class="tl-desc">Scored 85% in 10th boards. Decent all-rounder — Maths was always the favourite.</div>
+          <div class="tl-desc">Scored 85% in 10th boards. Maths was always the favourite.</div>
         </div>
       </div>
-
       <div class="certs-col rv-r">
         <div class="cert-hd">Certifications</div>
         <div class="cert-card cc-b">
           <div class="cc-icon">🏛️</div>
-          <div class="cc-body"><div class="cc-iss" style="color:var(--blue)">IIT Mumbai</div><div class="cc-name">Prompt Engineering</div></div>
+          <div><div class="cc-iss" style="color:var(--blue)">IIT Mumbai</div><div class="cc-name">Prompt Engineering</div></div>
         </div>
         <div class="cert-card cc-pu">
           <div class="cc-icon">🏛️</div>
-          <div class="cc-body"><div class="cc-iss" style="color:var(--purple)">VNIT Nagpur</div><div class="cc-name">Blockchain Technology</div></div>
+          <div><div class="cc-iss" style="color:var(--purple)">VNIT Nagpur</div><div class="cc-name">Blockchain Technology</div></div>
         </div>
         <div class="cert-card cc-in">
           <div class="cc-icon">🔵</div>
-          <div class="cc-body"><div class="cc-iss" style="color:#0071c5">Intel × CBSE × Digital India</div><div class="cc-name">AI For All — AI Appreciate</div><div class="cc-sub">Certificate of Participation · 03 Mar 2025</div></div>
+          <div><div class="cc-iss" style="color:#0071c5">Intel × CBSE × Digital India</div><div class="cc-name">AI For All — AI Appreciate</div><div class="cc-sub">Certificate of Participation · 03 Mar 2025</div></div>
         </div>
         <div class="cert-card cc-pu">
           <div class="cc-icon">🎓</div>
-          <div class="cc-body"><div class="cc-iss" style="color:var(--purple)">S.B. Jain Institute · Ongoing</div><div class="cc-name">Peer Mentor — AI/ML &amp; CP</div><div class="cc-sub">Mentoring juniors in projects &amp; competitive programming</div></div>
+          <div><div class="cc-iss" style="color:var(--purple)">S.B. Jain Institute · Ongoing</div><div class="cc-name">Peer Mentor — AI/ML &amp; CP</div><div class="cc-sub">Mentoring juniors in projects &amp; competitive programming</div></div>
         </div>
         <div class="cert-hd" style="margin-top:.8rem">Achievements</div>
         <div class="cert-card cc-am">
           <div class="cc-icon">🏆</div>
-          <div class="cc-body"><div class="cc-iss" style="color:var(--amber)">Smart India Hackathon 2024</div><div class="cc-name">Selected Participant — National Level</div><div class="cc-sub">EduAlert — Emergency Response App</div></div>
+          <div><div class="cc-iss" style="color:var(--amber)">Smart India Hackathon 2024</div><div class="cc-name">Selected Participant — National Level</div><div class="cc-sub">EduAlert — Emergency Response App</div></div>
         </div>
         <div class="cert-card cc-pk">
           <div class="cc-icon">⚡</div>
-          <div class="cc-body"><div class="cc-iss" style="color:var(--pink)">ACM-ICPC</div><div class="cc-name">Global Rank #2882</div><div class="cc-sub">Competitive Programming · Worldwide</div></div>
+          <div><div class="cc-iss" style="color:var(--pink)">ACM-ICPC</div><div class="cc-name">Global Rank #2882</div><div class="cc-sub">Competitive Programming · Worldwide</div></div>
         </div>
       </div>
     </div>
@@ -591,7 +583,7 @@ footer a:hover{color:var(--purple)}
             <div class="bi-dot" style="background:#ef4444;margin-left:3px"></div>
             <div class="bi-dot" style="background:#10b981;margin-left:3px"></div>
           </div>
-          <span class="bi-dash-title">Business Analytics — Power BI</span>
+          <span class="bi-dash-ttl">Business Analytics — Power BI</span>
           <span></span>
         </div>
         <div class="bi-body">
@@ -619,7 +611,7 @@ footer a:hover{color:var(--purple)}
                 <circle cx="25" cy="25" r="18" fill="none" stroke="#6d28d9" stroke-width="9" stroke-dasharray="36 77" stroke-dashoffset="-40"/>
                 <circle cx="25" cy="25" r="18" fill="none" stroke="#1d4ed8" stroke-width="9" stroke-dasharray="22 91" stroke-dashoffset="-76"/>
               </svg>
-              <div class="bi-legend">
+              <div class="bi-leg">
                 <div class="bi-li"><div class="bi-ld" style="background:#e8185a"></div>ML Products</div>
                 <div class="bi-li"><div class="bi-ld" style="background:#6d28d9"></div>Consulting</div>
                 <div class="bi-li"><div class="bi-ld" style="background:#1d4ed8"></div>Analytics</div>
@@ -649,12 +641,12 @@ footer a:hover{color:var(--purple)}
       <h2 style="margin-bottom:1rem">Want to work<br/><span class="gpk">together?</span></h2>
       <p>I'm a fresher actively looking for internships and entry-level roles in AI/ML. I'm a quick learner, I ship real projects, and I don't need hand-holding. If something I've built interests you, let's talk — I reply to everything.</p>
       <div class="cbtns">
-        <a class="btn btn-grad" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring%20Inquiry%20-%20Sriyansh%20Sheel&body=Hi%20Sriyansh%2C%0A%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect.">
+        <a class="btn btn-grad" href="mailto:sriyanshsheel1106@gmail.com?subject=Hiring Inquiry - Sriyansh Sheel&body=Hi Sriyansh,%0A%0AI came across your portfolio and would like to connect.">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="13" height="13"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           Email Me
         </a>
-        <a class="btn btn-out" href="https://github.com/Sriyansh-1106" target="_blank" rel="noopener">GitHub →</a>
-        <a class="btn btn-out" href="https://www.linkedin.com/in/sriyansh-sheel-51709528b/" target="_blank" rel="noopener">LinkedIn →</a>
+        <a class="btn btn-out" href="https://github.com/Sriyansh-1106" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn btn-out" href="https://www.linkedin.com/in/sriyansh-sheel-51709528b/" target="_blank" rel="noopener">LinkedIn</a>
       </div>
       <div class="cinfo-row">
         <div class="ci">📍 Nagpur, Maharashtra, India</div>
@@ -667,7 +659,6 @@ footer a:hover{color:var(--purple)}
 <!-- FOOTER -->
 <footer>
   <div>© 2025 Sriyansh Sheel</div>
-  <div class="vcounter">👁️ <span class="vcounter-num" id="vc">...</span> visits</div>
   <div class="fst"><div class="fdot"></div>Open to opportunities</div>
   <div><a href="https://github.com/Sriyansh-1106" target="_blank" rel="noopener">github.com/Sriyansh-1106</a></div>
 </footer>
@@ -689,9 +680,9 @@ const sects=document.querySelectorAll('section[id]');
 const navAs=document.querySelectorAll('.nav-links a');
 window.addEventListener('scroll',()=>{
   nav.classList.toggle('sc',scrollY>50);
-  let cur2='';
-  sects.forEach(s=>{if(scrollY>=s.offsetTop-200)cur2=s.id});
-  navAs.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur2));
+  let c='';
+  sects.forEach(s=>{if(scrollY>=s.offsetTop-200)c=s.id});
+  navAs.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+c));
 },{passive:true});
 
 /* MOBILE MENU */
@@ -717,16 +708,6 @@ window.addEventListener('scroll',()=>{
   const y=scrollY*.02;
   document.querySelectorAll('.blob').forEach((b,i)=>b.style.transform=`translateY(${y*(i%2===0?1:-1)*(i+1)*.35}px)`);
 },{passive:true});
-
-/* VISITOR COUNTER */
-try{
-  const vcEl=document.getElementById('vc');
-  let count=parseInt(localStorage.getItem('ss_visits')||'0');
-  const last=localStorage.getItem('ss_last');
-  const today=new Date().toDateString();
-  if(last!==today){count++;localStorage.setItem('ss_visits',count);localStorage.setItem('ss_last',today);}
-  if(vcEl)vcEl.textContent=count.toLocaleString('en-IN');
-}catch(e){const v=document.getElementById('vc');if(v)v.textContent='1';}
 
 /* TYPEWRITER */
 const roles=['Aspiring AI/ML Engineer','Power BI Enthusiast','React Native Developer','Competitive Programmer','CS + Business = Me'];
